@@ -101,9 +101,9 @@ const Task = ({ selectedTask }: TaskProps) => {
                                 <p className="mt-2 mb-1 text-muted">Due Date</p>
                                 <div className="d-flex">
                                     <i className="uil uil-schedule text-success me-1"></i>
-                                    <div className="flex-grow-1">
+                                    {/* <div className="flex-grow-1">
                                         <h5 className="mt-1 fs-14">{selectedTask.due_date}</h5>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </Col>
                         </Row>
@@ -124,7 +124,7 @@ const Task = ({ selectedTask }: TaskProps) => {
                         <h5 className="mt-4 mb-2 fs-15">Checklists/Sub-tasks</h5>
 
                         {/* checklists */}
-                        {(selectedTask.checklists || []).map((checklist, index) => {
+                        {/* {(selectedTask.checklists || []).map((checklist, index) => {
                             return (
                                 <div className="form-check mt-1" key={index}>
                                     <input
@@ -138,12 +138,12 @@ const Task = ({ selectedTask }: TaskProps) => {
                                     </label>
                                 </div>
                             );
-                        })}
+                        })} */}
 
                         <h5 className="mt-4 mb-2 fs-16">Attachments</h5>
 
                         {/* attachments */}
-                        {(selectedTask.attachments || []).map((f, index) => {
+                        {/* {(selectedTask.attachments || []).map((f, index) => {
                             return (
                                 <Card key={index} className="mb-2 shadow-none border">
                                     <div className="p-1 px-2">
@@ -183,14 +183,14 @@ const Task = ({ selectedTask }: TaskProps) => {
                                     </div>
                                 </Card>
                             );
-                        })}
+                        })} */}
 
                         <Row className="mt-3">
                             <Col>
                                 <h5 className="mb-2 fs-16">Comments</h5>
 
                                 {/* comments */}
-                                {(selectedTask.comments || []).map((comment, idx) => (
+                                {/* {(selectedTask.comments || []).map((comment, idx) => (
                                     <React.Fragment key={idx}>
                                         <div key={idx} className="d-flex align-items-start mt-3 p-1">
                                             <img
@@ -211,7 +211,7 @@ const Task = ({ selectedTask }: TaskProps) => {
                                         </div>
                                         <hr />
                                     </React.Fragment>
-                                ))}
+                                ))} */}
                             </Col>
                         </Row>
 

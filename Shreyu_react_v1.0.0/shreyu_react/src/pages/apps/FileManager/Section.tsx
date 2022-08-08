@@ -62,7 +62,7 @@ const Task = ({ task, selectTask, totalTasks }: TaskProps) => {
                                 />
                             </OverlayTrigger>
                         </div>
-                        <div className="mt-3 mt-sm-0">
+                        {/* <div className="mt-3 mt-sm-0">
                             <ul
                                 className={classNames('list-inline', 'text-sm-end', {
                                     'mb-0': task.id === totalTasks,
@@ -92,7 +92,7 @@ const Task = ({ task, selectTask, totalTasks }: TaskProps) => {
                                     </span>
                                 </li>
                             </ul>
-                        </div>
+                        </div> */}
                     </div>
                 </Col>
             </Row>
