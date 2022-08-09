@@ -4,7 +4,7 @@ import { UseFormHandleSubmit, FieldErrors, Control } from 'react-hook-form';
 
 // components
 import ShreyuDatepicker from '../../../../components/Datepicker';
-import { FormInput } from '../../../../components/';
+import { FormInput } from '../../../../components';
 
 interface AddNewTaskProps {
     newTaskModal: boolean;
@@ -32,14 +32,14 @@ const AddNewTask = ({
     return (
         <Modal show={newTaskModal} onHide={toggleNewTaskModal} size="lg" centered>
             <Modal.Header closeButton>
-                <h4 className="modal-title">Add New Checklist</h4>
+                <h4 className="modal-title">Add New Task</h4>
             </Modal.Header>
             <Modal.Body>
                 <form onSubmit={handleSubmit(handleNewTask)} className="px-2">
                     <FormInput
                         name="title"
-                        label="Name"
-                        placeholder="Enter Name"
+                        label="Guidlines"
+                        placeholder="Enter title"
                         type="text"
                         containerClass="mb-3"
                         register={register}
@@ -49,31 +49,20 @@ const AddNewTask = ({
                     />
 
                     <FormInput
-                        name="image"
-                        label="Image"
-                        type="file"
-                        containerClass="mb-3"
-                        register={register}
-                        key="image"
-                        errors={errors}
-                        control={control}
-                    />
-                    <FormInput
                         name="imple"
-                        label="Add Categories"
+                        label="Implementation"
                         type="select"
                         containerClass="mb-3"
                         register={register}
                         key="imple"
                         errors={errors}
                         control={control}
-                        defaultValue="Homepage">
-                        <option value="Low">Navigation</option>
-                        <option value="Medium">Product List</option>
-                        <option value="High">Product Page</option>
-                        <option value="High">Landing Page</option>
-                        <option value="High">Souce code</option>
+                        defaultValue="High">
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
                     </FormInput>
+
                     <FormInput
                         name="description"
                         label="Description"
@@ -90,17 +79,17 @@ const AddNewTask = ({
                         <Col md={6}>
                             <FormInput
                                 name="priority"
-                                label="Status"
+                                label="Impact"
                                 type="select"
                                 containerClass="mb-3"
                                 register={register}
                                 key="priority"
                                 errors={errors}
                                 control={control}
-                                defaultValue="Completed">
-                                <option value="Completed">Completed</option>
-                                <option value="Pending">pending</option>
-                                <option value="In Progress">In Progress</option>
+                                defaultValue="High">
+                                <option value="Low">Low</option>
+                                <option value="Medium">Medium</option>
+                                <option value="High">High</option>
                             </FormInput>
                         </Col>
                         <Col md={6}>

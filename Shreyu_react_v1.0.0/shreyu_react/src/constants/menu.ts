@@ -76,20 +76,7 @@ const MENU_ITEMS: MenuItemTypes[] = [
     //         },
     //     ],
     // },
-    // {
-    //     key: 'apps-projects',
-    //     label: 'Projects',
-    //     isTitle: false,
-    //     icon: 'briefcase',
-    //     children: [
-    //         {
-    //             key: 'project-details',
-    //             label: 'Details',
-    //             url: '/apps/projects/details',
-    //             parentKey: 'apps-projects',
-    //         },
-    //     ],
-    // },
+   
     {
         key: 'apps-tasks',
         label: 'Categories',
@@ -119,6 +106,21 @@ const MENU_ITEMS: MenuItemTypes[] = [
             // },
         // ],
     },
+    {
+        key: 'apps-projects',
+        label: 'Checklist',
+        isTitle: false,
+        icon: 'briefcase',
+        url: '/apps/projects/details',
+        // children: [
+        //     {
+        //         key: 'project-details',
+        //         label: 'Details',
+        //         url: '/apps/projects/details',
+        //         parentKey: 'apps-projects',
+        //     },
+        // ],
+    },
     // {
     //     key: 'apps-page',
     //     label: 'Page',
@@ -127,13 +129,13 @@ const MENU_ITEMS: MenuItemTypes[] = [
     //     url: '/apps/page',
     // },
 
-    {
-        key: 'apps-file-manager',
-        label: 'Page',
-        isTitle: false,
-        icon: 'file-plus',
-        url: '/apps/file-manager',
-    },
+    // {
+    //     key: 'apps-file-manager',
+    //     label: 'Page',
+    //     isTitle: false,
+    //     icon: 'file-plus',
+    //     url: '/apps/file-manager',
+    // },
     // { key: 'custom', label: 'Custom', isTitle: true },
     // {
     //     key: 'extra-pages',

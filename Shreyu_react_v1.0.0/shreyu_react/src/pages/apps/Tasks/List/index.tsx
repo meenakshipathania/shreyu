@@ -12,6 +12,7 @@ import PageTitle from '../../../../components/PageTitle';
 // import TaskSection from './Section';
 import Table from '../../../../components/Table';
 import AddNewTask from '../Board/AddNewTask';
+import Edit from './AddNewTask';
 // import Task from './Task';
 
 // dummy data
@@ -144,7 +145,7 @@ const {
     reset,
     formState: { errors },
 } = methods;
-
+        
     /**
      * Selects the task
      * @param {*} taks
@@ -308,6 +309,19 @@ const {
             </Row>
             {newTaskModal && (
                 <AddNewTask
+                    newTaskModal={newTaskModal}
+                    toggleNewTaskModal={toggleNewTaskModal}
+                    handleNewTask={handleNewTask}
+                    handleSubmit={handleSubmit}
+                    newTaskDetails={newTaskDetails}
+                    handleDateChange={handleDateChange}
+                    register={register}
+                    errors={errors}
+                    control={control}
+                />
+            )}
+             {newTaskModal && (
+                <Edit
                     newTaskModal={newTaskModal}
                     toggleNewTaskModal={toggleNewTaskModal}
                     handleNewTask={handleNewTask}

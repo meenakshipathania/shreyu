@@ -3,11 +3,12 @@ import React, { useEffect } from 'react';
 // components
 import Tagline from './Tagline';
 import NavBar from './NavBar';
-import Hero from './Hero';
-import Layouts from './Layouts';
-import Pages from './Pages';
-import Features from './Features';
-import FAQs from './FAQs';
+// import Hero from './Hero';
+// import Layouts from './Layouts';
+import Tasklist from './index2'
+// import Pages from './Pages';
+// import Features from './Features';
+// import FAQs from './FAQs';
 import Footer from './Footer';
 
 // // dummy data
@@ -34,19 +35,20 @@ const Landing = () => {
             <NavBar />
 
             {/* hero */}
-            <Hero />
+            {/* <Hero /> */}
 
             {/* layout demos */}
-            <Layouts layouts={layouts} />
+            <Tasklist />
+            {/* <Layouts layouts={layouts} /> */}
 
             {/* pages demos */}
-            <Pages pagesList={pagesList} />
+            {/* <Pages pagesList={pagesList} /> */}
 
             {/* widgets demos */}
-            <Features />
+            {/* <Features /> */}
 
             {/* FAQs */}
-            <FAQs />
+            {/* <FAQs /> */}
 
             {/* footer */}
             <Footer />

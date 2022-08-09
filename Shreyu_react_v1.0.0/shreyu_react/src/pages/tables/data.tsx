@@ -22,7 +22,7 @@ const records: Records[] = [
         implementation: <mark style={{background:"pink", borderRadius:"5px", color:"#e63453"}}>High</mark>,
         impact: <mark style={{background:"lightgreen", borderRadius:"5px", color:"green"}}>Easy</mark>,
         edit: <mark style={{background:"pink", borderRadius:"5px", color:"white"}}>Panding</mark>,
-        delete: <div><a href="../projects/details"><button className="btn btn-success" ><i className="uil uil-edit-alt"></i></button></a> <button className="btn btn-danger"><i className="uil uil-trash"></i></button></div>
+        delete: <div><button className="btn btn-success" ><i className="uil uil-edit-alt"></i></button> <button className="btn btn-danger"><i className="uil uil-trash"></i></button></div>
     },
     {
         id: 2,
@@ -30,7 +30,7 @@ const records: Records[] = [
         implementation: <mark style={{background:"lightgreen", borderRadius:"5px", color:"green"}}>Easy</mark>,
         impact: <mark style={{background:"grey", borderRadius:"5px", color:"white"}}>Medium</mark>,
         edit: <mark style={{background:"green", borderRadius:"5px", color:"white"}}>Completed</mark>,
-        delete: <div><a href="../projects/details"><button className="btn btn-success" ><i className="uil uil-edit-alt"></i></button></a> <button className="btn btn-danger"><i className="uil uil-trash"></i></button></div>
+        delete: <div><button className="btn btn-success" ><i className="uil uil-edit-alt"></i></button> <button className="btn btn-danger"><i className="uil uil-trash"></i></button></div>
     },
     {
         id: 3,
@@ -38,7 +38,7 @@ const records: Records[] = [
         implementation: <mark style={{background:"pink", borderRadius:"5px", color:"#e63453"}}>High</mark>,
         impact: <mark style={{background:"lightgreen", borderRadius:"5px", color:"green"}}>Easy</mark>,
         edit: <mark style={{background:"yellow", borderRadius:"5px", color:"white"}}>In Progress</mark>,
-        delete: <div><a href="../projects/details"><button className="btn btn-success" ><i className="uil uil-edit-alt"></i></button></a> <button className="btn btn-danger"><i className="uil uil-trash"></i></button></div>
+        delete: <div><button className="btn btn-success" ><i className="uil uil-edit-alt"></i></button> <button className="btn btn-danger"><i className="uil uil-trash"></i></button></div>
     },
     {
         id: 4,
@@ -46,7 +46,7 @@ const records: Records[] = [
         implementation: <mark style={{background:"lightgreen", borderRadius:"5px", color:"green"}}>Easy</mark>,
         impact: <mark style={{background:"lightgreen", borderRadius:"5px", color:"green"}}>Easy</mark>,
         edit: <mark style={{background:"pink", borderRadius:"5px", color:"white"}}>Panding</mark>,
-        delete: <div><a href="../projects/details"><button className="btn btn-success" ><i className="uil uil-edit-alt"></i></button></a> <button className="btn btn-danger"><i className="uil uil-trash"></i></button></div>
+        delete: <div><button className="btn btn-success" ><i className="uil uil-edit-alt"></i></button> <button className="btn btn-danger"><i className="uil uil-trash"></i></button></div>
     },
     {
         id: 5,
@@ -54,7 +54,7 @@ const records: Records[] = [
         implementation: <mark style={{background:"pink", borderRadius:"5px", color:"#e63453"}}>High</mark>,
         impact: <mark style={{background:"grey", borderRadius:"5px", color:"white"}}>Medium</mark>,
         edit: <mark style={{background:"yellow", borderRadius:"5px", color:"white"}}>In Progress</mark>,
-        delete: <div><a href="../projects/details"><button className="btn btn-success" ><i className="uil uil-edit-alt"></i></button></a> <button className="btn btn-danger"><i className="uil uil-trash"></i></button></div>
+        delete: <div><button className="btn btn-success" ><i className="uil uil-edit-alt"></i></button> <button className="btn btn-danger"><i className="uil uil-trash"></i></button></div>
     },
     {
         id: 6,
@@ -62,7 +62,7 @@ const records: Records[] = [
         implementation: <mark style={{background:"pink", borderRadius:"5px", color:"#e63453"}}>High</mark>,
         impact: <mark style={{background:"lightgreen", borderRadius:"5px", color:"green"}}>Easy</mark>,
          edit: <mark style={{background:"pink", borderRadius:"5px", color:"white"}}>Panding</mark>,
-        delete: <div><a href="../projects/details"><button className="btn btn-success" ><i className="uil uil-edit-alt"></i></button></a> <button className="btn btn-danger"><i className="uil uil-trash"></i></button></div>
+        delete: <div><button className="btn btn-success" ><i className="uil uil-edit-alt"></i></button> <button className="btn btn-danger"><i className="uil uil-trash"></i></button></div>
     },
     {
         id: 7,
@@ -78,7 +78,7 @@ const records: Records[] = [
         implementation: <mark style={{background:"grey", borderRadius:"5px", color:"white"}}>Medium</mark>,
         impact: <mark style={{background:"lightgreen", borderRadius:"5px", color:"green"}}>Easy</mark>,
          edit: <mark style={{background:"green", borderRadius:"5px", color:"white"}}>Completed</mark>,
-        delete: <div><a href="../projects/details"><button className="btn btn-success" ><i className="uil uil-edit-alt"></i></button></a> <button className="btn btn-danger"><i className="uil uil-trash"></i></button></div>
+        delete: <div><button className="btn btn-success" ><i className="uil uil-edit-alt"></i></button> <button className="btn btn-danger"><i className="uil uil-trash"></i></button></div>
     },
     {
         id: 9,
@@ -86,7 +86,7 @@ const records: Records[] = [
         implementation: <mark style={{background:"grey", borderRadius:"5px", color:"white"}}>Medium</mark>,
         impact: <mark style={{background:"lightgreen", borderRadius:"5px", color:"green"}}>Easy</mark>,
          edit: <mark style={{background:"yellow", borderRadius:"5px", color:"white"}}>In Progress</mark>,
-        delete: <div><a href="../projects/details"><button className="btn btn-success" ><i className="uil uil-edit-alt"></i></button></a> <button className="btn btn-danger"><i className="uil uil-trash"></i></button></div>
+        delete: <div><button className="btn btn-success" ><i className="uil uil-edit-alt"></i></button> <button className="btn btn-danger"><i className="uil uil-trash"></i></button></div>
     },
     // {
     //     id: 10,
