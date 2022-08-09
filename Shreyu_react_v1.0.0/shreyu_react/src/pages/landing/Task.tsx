@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Row, Col, Card, Dropdown, OverlayTrigger, Tooltip, Button } from 'react-bootstrap';
+import { Row, Col, Card, Dropdown, Button } from 'react-bootstrap';
 
 // Form Editor
 import { EditorState, ContentState } from 'draft-js';

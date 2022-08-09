@@ -5,19 +5,6 @@ import { Row, Col, Card } from 'react-bootstrap';
 
 // components
 // import PageTitle from '../../components/PageTitle';
- // checklists: [
-        //     { id: 1, title: 'Find out the old contract documents', completed: false },
-        //     {
-        //         id: 2,
-        //         title: 'Organize meeting sales associates to understand need in detail',
-        //         completed: true,
-        //     },
-        //     {
-        //         id: 3,
-        //         title: 'Make sure to cover every small details',
-        //         completed: true,
-        //     },
-        // ],
 import TaskSection from './Section';
 // import Task from './Task';
 
@@ -299,7 +286,7 @@ const TaskList = () => {
                                         <div className='Homee'>
                                             <div className='div1'>
                                             <img src='../../../assets/images/Homepage.svg' alt="hfjhf"></img>
-                                            <h3>Product Page</h3>
+                                            <h3>Page</h3>
                                             </div>
                                             <div className='div2'>
                                                 <div className='under'>

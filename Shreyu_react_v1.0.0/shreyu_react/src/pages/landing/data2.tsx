@@ -32,10 +32,11 @@ import avatarImg6 from '../../assets/images/users/avatar-6.jpg';
 export interface TaskItemTypes {
     id: number;
     title: string;
+    priority: string;
     assigned_to: string;
     assignee_avatar: string;
     stage: string,
-    priority: string;
+    list : any;
     // due_date: string;
     // completed: boolean;
     // checklists: Array<ChecklistsItems>;
@@ -53,6 +54,20 @@ const todayTasks: TaskItemTypes[] = [
         assignee_avatar: avatarImg2,
         // due_date: 'Today 4pm',
         stage: 'In-progress',
+        list : <div id="accordion"><div className="card">
+        <div className="card-header" id="heading-2">
+          <h5 className="mb-0">
+            <a className="collapsed" role="button" data-toggle="collapse" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+              Item 2
+            </a>
+          </h5>
+        </div>
+        <div id="collapse-2" className="collapse" data-parent="#accordion" aria-labelledby="heading-2">
+          <div className="card-body">
+            Text 2
+          </div>
+        </div>
+      </div></div>
         
         // checklists: [
         //     { id: 1, title: 'Find out the old contract documents', completed: false },
@@ -98,6 +113,20 @@ const todayTasks: TaskItemTypes[] = [
         assignee_avatar: avatarImg3,
         // due_date: 'Today 4pm',
         stage: 'In-progress',
+        list : <div id="accordion"><div className="card">
+        <div className="card-header" id="heading-2">
+          <h5 className="mb-0">
+            <a className="collapsed" role="button" data-toggle="collapse" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+              Item 2
+            </a>
+          </h5>
+        </div>
+        <div id="collapse-2" className="collapse" data-parent="#accordion" aria-labelledby="heading-2">
+          <div className="card-body">
+            Text 2
+          </div>
+        </div>
+      </div></div>
         
     //     checklists: [
     //         { id: 1, title: 'Find out the old contract documents', completed: false },
@@ -140,6 +169,20 @@ const todayTasks: TaskItemTypes[] = [
         assigned_to: 'Kevin C',
         assignee_avatar: avatarImg4,
         stage: 'In-progress',
+        list : <div id="accordion"><div className="card">
+        <div className="card-header" id="heading-2">
+          <h5 className="mb-0">
+            <a className="collapsed" role="button" data-toggle="collapse" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+              Item 2
+            </a>
+          </h5>
+        </div>
+        <div id="collapse-2" className="collapse" data-parent="#accordion" aria-labelledby="heading-2">
+          <div className="card-body">
+            Text 2
+          </div>
+        </div>
+      </div></div>
     },
     {
         id: 4,
@@ -148,6 +191,20 @@ const todayTasks: TaskItemTypes[] = [
         assigned_to: 'Kevin C',
         assignee_avatar: avatarImg4,
         stage: 'In-progress',
+        list : <div id="accordion"><div className="card">
+        <div className="card-header" id="heading-2">
+          <h5 className="mb-0">
+            <a className="collapsed" role="button" data-toggle="collapse" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+              Item 2
+            </a>
+          </h5>
+        </div>
+        <div id="collapse-2" className="collapse" data-parent="#accordion" aria-labelledby="heading-2">
+          <div className="card-body">
+            Text 2
+          </div>
+        </div>
+      </div></div>
     },
 ];
 
@@ -159,6 +216,20 @@ const upcomingTasks: TaskItemTypes[] = [
         assignee_avatar: avatarImg2,
         stage: 'Todo',
         priority: 'Low',
+        list : <div id="accordion"><div className="card">
+        <div className="card-header" id="heading-2">
+          <h5 className="mb-0">
+            <a className="collapsed" role="button" data-toggle="collapse" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+              Item 2
+            </a>
+          </h5>
+        </div>
+        <div id="collapse-2" className="collapse" data-parent="#accordion" aria-labelledby="heading-2">
+          <div className="card-body">
+            Text 2
+          </div>
+        </div>
+      </div></div>
     },
     {
         id: 2,
@@ -167,6 +238,20 @@ const upcomingTasks: TaskItemTypes[] = [
         assignee_avatar: avatarImg5,
         stage: 'Review',
         priority: 'Low',
+        list : <div id="accordion"><div className="card">
+        <div className="card-header" id="heading-2">
+          <h5 className="mb-0">
+            <a className="collapsed" role="button" data-toggle="collapse" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+              Item 2
+            </a>
+          </h5>
+        </div>
+        <div id="collapse-2" className="collapse" data-parent="#accordion" aria-labelledby="heading-2">
+          <div className="card-body">
+            Text 2
+          </div>
+        </div>
+      </div></div>
     },
     {
         id: 3,
@@ -175,6 +260,20 @@ const upcomingTasks: TaskItemTypes[] = [
         assignee_avatar: avatarImg6,
         stage: 'Review',
         priority: 'Medium',
+        list : <div id="accordion"><div className="card">
+        <div className="card-header" id="heading-2">
+          <h5 className="mb-0">
+            <a className="collapsed" role="button" data-toggle="collapse" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+              Item 2
+            </a>
+          </h5>
+        </div>
+        <div id="collapse-2" className="collapse" data-parent="#accordion" aria-labelledby="heading-2">
+          <div className="card-body">
+            Text 2
+          </div>
+        </div>
+      </div></div>
     },
     {
         id: 4,
@@ -183,6 +282,20 @@ const upcomingTasks: TaskItemTypes[] = [
         assignee_avatar: avatarImg6,
         stage: 'Review',
         priority: 'Medium',
+        list : <div id="accordion"><div className="card">
+        <div className="card-header" id="heading-2">
+          <h5 className="mb-0">
+            <a className="collapsed" role="button" data-toggle="collapse" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+              Item 2
+            </a>
+          </h5>
+        </div>
+        <div id="collapse-2" className="collapse" data-parent="#accordion" aria-labelledby="heading-2">
+          <div className="card-body">
+            Text 2
+          </div>
+        </div>
+      </div></div>
     },
     {
         id: 5,
@@ -191,6 +304,20 @@ const upcomingTasks: TaskItemTypes[] = [
         assignee_avatar: avatarImg6,
         stage: 'Review',
         priority: 'Medium',
+        list : <div id="accordion"><div className="card">
+        <div className="card-header" id="heading-2">
+          <h5 className="mb-0">
+            <a className="collapsed" role="button" data-toggle="collapse" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+              Item 2
+            </a>
+          </h5>
+        </div>
+        <div id="collapse-2" className="collapse" data-parent="#accordion" aria-labelledby="heading-2">
+          <div className="card-body">
+            Text 2
+          </div>
+        </div>
+      </div></div>
     },
     {
         id: 6,
@@ -199,6 +326,20 @@ const upcomingTasks: TaskItemTypes[] = [
         assignee_avatar: avatarImg6,
         stage: 'Review',
         priority: 'Medium',
+        list : <div id="accordion"><div className="card">
+        <div className="card-header" id="heading-2">
+          <h5 className="mb-0">
+            <a className="collapsed" role="button" data-toggle="collapse" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+              Item 2
+            </a>
+          </h5>
+        </div>
+        <div id="collapse-2" className="collapse" data-parent="#accordion" aria-labelledby="heading-2">
+          <div className="card-body">
+            Text 2
+          </div>
+        </div>
+      </div></div>
     },
     {
         id: 7,
@@ -207,6 +348,20 @@ const upcomingTasks: TaskItemTypes[] = [
         assignee_avatar: avatarImg6,
         stage: 'Review',
         priority: 'Medium',
+        list : <div id="accordion"><div className="card">
+        <div className="card-header" id="heading-2">
+          <h5 className="mb-0">
+            <a className="collapsed" role="button" data-toggle="collapse" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+              Item 2
+            </a>
+          </h5>
+        </div>
+        <div id="collapse-2" className="collapse" data-parent="#accordion" aria-labelledby="heading-2">
+          <div className="card-body">
+            Text 2
+          </div>
+        </div>
+      </div></div>
     },
     {
         id: 8,
@@ -215,6 +370,20 @@ const upcomingTasks: TaskItemTypes[] = [
         assignee_avatar: avatarImg6,
         stage: 'Review',
         priority: 'Medium',
+        list : <div id="accordion"><div className="card">
+        <div className="card-header" id="heading-2">
+          <h5 className="mb-0">
+            <a className="collapsed" role="button" data-toggle="collapse" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+              Item 2
+            </a>
+          </h5>
+        </div>
+        <div id="collapse-2" className="collapse" data-parent="#accordion" aria-labelledby="heading-2">
+          <div className="card-body">
+            Text 2
+          </div>
+        </div>
+      </div></div>
     },
 ];
 
@@ -226,6 +395,20 @@ const productTasks: TaskItemTypes[] = [
         assignee_avatar: avatarImg2,
         stage: 'Todo',
         priority: 'High',
+        list : <div id="accordion"><div className="card">
+        <div className="card-header" id="heading-2">
+          <h5 className="mb-0">
+            <a className="collapsed" role="button" data-toggle="collapse" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+              Item 2
+            </a>
+          </h5>
+        </div>
+        <div id="collapse-2" className="collapse" data-parent="#accordion" aria-labelledby="heading-2">
+          <div className="card-body">
+            Text 2
+          </div>
+        </div>
+      </div></div>
     },
     {
         id: 2,
@@ -234,6 +417,20 @@ const productTasks: TaskItemTypes[] = [
         assignee_avatar: avatarImg5,
         stage: 'Review',
         priority: 'Low',
+        list : <div id="accordion"><div className="card">
+        <div className="card-header" id="heading-2">
+          <h5 className="mb-0">
+            <a className="collapsed" role="button" data-toggle="collapse" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+              Item 2
+            </a>
+          </h5>
+        </div>
+        <div id="collapse-2" className="collapse" data-parent="#accordion" aria-labelledby="heading-2">
+          <div className="card-body">
+            Text 2
+          </div>
+        </div>
+      </div></div>
     },
     {
         id: 3,
@@ -242,6 +439,20 @@ const productTasks: TaskItemTypes[] = [
         assignee_avatar: avatarImg6,
         stage: 'Done',
         priority: 'Medium',
+        list : <div id="accordion"><div className="card">
+        <div className="card-header" id="heading-2">
+          <h5 className="mb-0">
+            <a className="collapsed" role="button" data-toggle="collapse" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+              Item 2
+            </a>
+          </h5>
+        </div>
+        <div id="collapse-2" className="collapse" data-parent="#accordion" aria-labelledby="heading-2">
+          <div className="card-body">
+            Text 2
+          </div>
+        </div>
+      </div></div>
     },
     {
         id: 4,
@@ -250,6 +461,21 @@ const productTasks: TaskItemTypes[] = [
         assignee_avatar: avatarImg6,
         stage: 'Done',
         priority: 'Medium',
+        list : <div id="accordion"><div className="card">
+        <div className="card-header" id="heading-2">
+          <h5 className="mb-0">
+            <a className="collapsed" role="button"
+ data-toggle="collapse" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+              Item 2
+            </a>
+          </h5>
+        </div>
+        <div id="collapse-2" className="collapse" data-parent="#accordion" aria-labelledby="heading-2">
+          <div className="card-body">
+            Text 2
+          </div>
+        </div>
+      </div></div>
     },
     {
         id: 5,
@@ -258,6 +484,20 @@ const productTasks: TaskItemTypes[] = [
         assignee_avatar: avatarImg6,
         stage: 'Done',
         priority: 'Medium',
+        list : <div id="accordion"><div className="card">
+        <div className="card-header" id="heading-2">
+          <h5 className="mb-0">
+            <a className="collapsed" role="button" data-toggle="collapse" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+              Item 2
+            </a>
+          </h5>
+        </div>
+        <div id="collapse-2" className="collapse" data-parent="#accordion" aria-labelledby="heading-2">
+          <div className="card-body">
+            Text 2
+          </div>
+        </div>
+      </div></div>
     },
     {
         id: 6,
@@ -266,6 +506,20 @@ const productTasks: TaskItemTypes[] = [
         assignee_avatar: avatarImg6,
         stage: 'Done',
         priority: 'Medium',
+        list : <div id="accordion"><div className="card">
+        <div className="card-header" id="heading-2">
+          <h5 className="mb-0">
+            <a className="collapsed" role="button" data-toggle="collapse" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+              Item 2
+            </a>
+          </h5>
+        </div>
+        <div id="collapse-2" className="collapse" data-parent="#accordion" aria-labelledby="heading-2">
+          <div className="card-body">
+            Text 2
+          </div>
+        </div>
+      </div></div>
     },
     {
         id: 7,
@@ -274,6 +528,20 @@ const productTasks: TaskItemTypes[] = [
         assignee_avatar: avatarImg6,
         stage: 'Done',
         priority: 'Medium',
+        list : <div id="accordion"><div className="card">
+        <div className="card-header" id="heading-2">
+          <h5 className="mb-0">
+            <a className="collapsed" role="button" data-toggle="collapse" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+              Item 2
+            </a>
+          </h5>
+        </div>
+        <div id="collapse-2" className="collapse" data-parent="#accordion" aria-labelledby="heading-2">
+          <div className="card-body">
+            Text 2
+          </div>
+        </div>
+      </div></div>
     },
     {
         id: 8,
@@ -282,6 +550,20 @@ const productTasks: TaskItemTypes[] = [
         assignee_avatar: avatarImg6,
         stage: 'Done',
         priority: 'Medium',
+        list : <div id="accordion"><div className="card">
+        <div className="card-header" id="heading-2">
+          <h5 className="mb-0">
+            <a className="collapsed" role="button" data-toggle="collapse" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+              Item 2
+            </a>
+          </h5>
+        </div>
+        <div id="collapse-2" className="collapse" data-parent="#accordion" aria-labelledby="heading-2">
+          <div className="card-body">
+            Text 2
+          </div>
+        </div>
+      </div></div>
     },
 ];
 
@@ -293,6 +575,20 @@ const otherTasks: TaskItemTypes[] = [
         assignee_avatar: avatarImg2,
         stage: 'Todo',
         priority: 'High',
+        list : <div id="accordion"><div className="card">
+        <div className="card-header" id="heading-2">
+          <h5 className="mb-0">
+            <a className="collapsed" role="button" data-toggle="collapse" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+              Item 2
+            </a>
+          </h5>
+        </div>
+        <div id="collapse-2" className="collapse" data-parent="#accordion" aria-labelledby="heading-2">
+          <div className="card-body">
+            Text 2
+          </div>
+        </div>
+      </div></div>
     },
     {
         id: 2,
@@ -301,6 +597,20 @@ const otherTasks: TaskItemTypes[] = [
         assignee_avatar: avatarImg5,
         stage: 'Review',
         priority: 'Low',
+        list : <div id="accordion"><div className="card">
+        <div className="card-header" id="heading-2">
+          <h5 className="mb-0">
+            <a className="collapsed" role="button" data-toggle="collapse" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+              Item 2
+            </a>
+          </h5>
+        </div>
+        <div id="collapse-2" className="collapse" data-parent="#accordion" aria-labelledby="heading-2">
+          <div className="card-body">
+            Text 2
+          </div>
+        </div>
+      </div></div>
     },
     {
         id: 3,
@@ -309,6 +619,20 @@ const otherTasks: TaskItemTypes[] = [
         assignee_avatar: avatarImg6,
         stage: 'Done',
         priority: 'Medium',
+        list : <div id="accordion"><div className="card">
+        <div className="card-header" id="heading-2">
+          <h5 className="mb-0">
+            <a className="collapsed" role="button" data-toggle="collapse" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+              Item 2
+            </a>
+          </h5>
+        </div>
+        <div id="collapse-2" className="collapse" data-parent="#accordion" aria-labelledby="heading-2">
+          <div className="card-body">
+            Text 2
+          </div>
+        </div>
+      </div></div>
     },
     {
         id: 4,
@@ -317,6 +641,20 @@ const otherTasks: TaskItemTypes[] = [
         assignee_avatar: avatarImg6,
         stage: 'Done',
         priority: 'Medium',
+        list : <div id="accordion"><div className="card">
+        <div className="card-header" id="heading-2">
+          <h5 className="mb-0">
+            <a className="collapsed" role="button" data-toggle="collapse" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+              Item 2
+            </a>
+          </h5>
+        </div>
+        <div id="collapse-2" className="collapse" data-parent="#accordion" aria-labelledby="heading-2">
+          <div className="card-body">
+            Text 2
+          </div>
+        </div>
+      </div></div>
     },
     {
         id: 5,
@@ -325,6 +663,20 @@ const otherTasks: TaskItemTypes[] = [
         assignee_avatar: avatarImg6,
         stage: 'Done',
         priority: 'Medium',
+        list : <div id="accordion"><div className="card">
+        <div className="card-header" id="heading-2">
+          <h5 className="mb-0">
+            <a className="collapsed" role="button" data-toggle="collapse" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+              Item 2
+            </a>
+          </h5>
+        </div>
+        <div id="collapse-2" className="collapse" data-parent="#accordion" aria-labelledby="heading-2">
+          <div className="card-body">
+            Text 2
+          </div>
+        </div>
+      </div></div>
     },
     {
         id: 6,
@@ -333,6 +685,20 @@ const otherTasks: TaskItemTypes[] = [
         assignee_avatar: avatarImg6,
         stage: 'Done',
         priority: 'Medium',
+        list : <div id="accordion"><div className="card">
+        <div className="card-header" id="heading-2">
+          <h5 className="mb-0">
+            <a className="collapsed" role="button" data-toggle="collapse" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+              Item 2
+            </a>
+          </h5>
+        </div>
+        <div id="collapse-2" className="collapse" data-parent="#accordion" aria-labelledby="heading-2">
+          <div className="card-body">
+            Text 2
+          </div>
+        </div>
+      </div></div>
     },
 ];
 
