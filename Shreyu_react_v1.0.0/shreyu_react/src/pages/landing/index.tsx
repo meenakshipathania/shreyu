@@ -12,7 +12,7 @@ import Tasklist from './index2'
 import Footer from './Footer';
 
 // // dummy data
-import { layouts, pagesList } from './data';
+// import { layouts, pagesList } from './data';
 
 const Landing = () => {
     useEffect(() => {

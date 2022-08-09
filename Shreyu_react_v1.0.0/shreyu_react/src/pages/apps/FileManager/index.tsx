@@ -208,7 +208,7 @@ const TaskList = () => {
                                     </div>
                                                 <TaskSection
                                                     title="Other"
-                                                    tasks={otherTasks}
+                                                    tasks={otherTask}
                                                     selectTask={selectTask}></TaskSection>
                                         </Col>
                                     </Row>

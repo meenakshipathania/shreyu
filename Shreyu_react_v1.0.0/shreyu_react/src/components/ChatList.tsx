@@ -57,7 +57,7 @@ ChatItem.defaultProps = chatItemDefaultProps;
  */
 
 interface FormValues {
-    newMessage: string;
+    newMessage: any;
 }
 
 /**
