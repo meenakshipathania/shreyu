@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, OverlayTrigger, Popover, Button, OverlayProps } from 'react-bootstrap';
+import { Card, OverlayTrigger, Popover, Button, OverlayProps} from 'react-bootstrap';
 
 interface DirectionsType {
     placement: OverlayProps['placement'];
@@ -29,7 +29,7 @@ const Popovers = () => {
                             key={item.placement}
                             placement={item.placement}
                             overlay={
-                                <Popover popper id={`popover-positioned-${item.placement}`}>
+                                <Popover id={`popover-positioned-${item.placement}`}>
                                     <Popover.Body>
                                         Vivamus sagittis lacus vel augue laoreet rutrum faucibus.
                                     </Popover.Body>
@@ -43,7 +43,7 @@ const Popovers = () => {
                         trigger="focus"
                         placement="right"
                         overlay={
-                            <Popover popper id={`popover-dismissible`}>
+                            <Popover id={`popover-dismissible`}>
                                 <Popover.Body>And here's some amazing content. It's very engaging. Right?</Popover.Body>
                             </Popover>
                         }>

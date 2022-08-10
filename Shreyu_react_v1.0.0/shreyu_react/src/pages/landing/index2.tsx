@@ -9,14 +9,19 @@ import TaskSection from './Section';
 // import Task from './Task';
 
 // dummy data
-import { todayTasks, upcomingTasks, productTasks, otherTasks, TaskItemTypes } from './data2';
+import { todayTasks, upcomingTasks, Searching, productlist, page, cart, Checkout, Account, Mobile, TaskItemTypes } from './data2';
 
 // Task List
 const TaskList = () => {
     const [todayTask] = useState<TaskItemTypes[]>([...todayTasks]);
     const [upcomingTask] = useState<TaskItemTypes[]>([...upcomingTasks]);
-    const [productTask] = useState<TaskItemTypes[]>([...productTasks]);
-    const [otherTask] = useState<TaskItemTypes[]>([...otherTasks]);
+    const [Search] = useState<TaskItemTypes[]>([...Searching]);
+    const [list] = useState<TaskItemTypes[]>([...productlist]);
+    const [propage] = useState<TaskItemTypes[]>([...page]);
+    const [cartt] = useState<TaskItemTypes[]>([...cart]);
+    const [checkout] = useState<TaskItemTypes[]>([...Checkout]);
+    const [account] = useState<TaskItemTypes[]>([...Account]);
+    const [mobile] = useState<TaskItemTypes[]>([...Mobile]);
     const [selectedTask, setSelectedTask] = useState<TaskItemTypes>(todayTasks[0]);
 
     /**
@@ -112,7 +117,7 @@ const TaskList = () => {
                                         <Col>
                                         <div className='Homee'>
                                             <div className='div1'>
-                                            <img src='../../../assets/images/Homepage.svg' alt="hfjhf"></img>
+                                            <img src={require("../../assets/images/Homepage.svg").default} alt="hfjhf"></img>
                                             <h3>Homepage</h3>
                                             </div>
                                             <div className='div2'>
@@ -171,7 +176,7 @@ const TaskList = () => {
                                         <Col>
                                         <div className='Homee'>
                                             <div className='div1'>
-                                            <img src='../../../assets/images/Homepage.svg' alt="hfjhf"></img>
+                                            <img src={require("../../assets/images/Navigation.svg").default} alt="hfjhf"></img>
                                             <h3>Navigation</h3>
                                             </div>
                                             <div className='div2'>
@@ -228,14 +233,14 @@ const TaskList = () => {
                                         <Col>
                                         <div className='Homee'>
                                             <div className='div1'>
-                                            <img src='../../../assets/images/Homepage.svg' alt="hfjhf"></img>
-                                            <h3>Product List</h3>
+                                            <img src={require("../../assets/images/Search.svg").default} alt="hfjhf"></img>
+                                            <h3>Search</h3>
                                             </div>
                                             <div className='div2'>
                                                 <div className='under'>
                                                     <span></span>
                                                 </div>
-                                                0/6 Completed
+                                                0/5 Completed
                                             </div>
                                             <div>
                                                 <button className='butt1'>
@@ -251,8 +256,8 @@ const TaskList = () => {
                                         
                                     </div>
                                                 <TaskSection
-                                                    title="Product List"
-                                                    tasks={otherTask}
+                                                    title="Search"
+                                                    tasks={Search}
                                                     selectTask={selectTask}></TaskSection>
                                         </Col>
                                     </Row>
@@ -285,8 +290,65 @@ const TaskList = () => {
                                         <Col>
                                         <div className='Homee'>
                                             <div className='div1'>
-                                            <img src='../../../assets/images/Homepage.svg' alt="hfjhf"></img>
-                                            <h3>Page</h3>
+                                            <img src={require("../../assets/images/Product list.svg").default} alt="hfjhf"></img>
+                                            <h3>Product List</h3>
+                                            </div>
+                                            <div className='div2'>
+                                                <div className='under'>
+                                                    <span></span>
+                                                </div>
+                                                0/6 Completed
+                                            </div>
+                                            <div>
+                                                <button className='butt1'>
+                                                    <span className='sp1'>Check All</span>
+                                                </button>
+                                                <button className='butt2'>
+                                                <span className='sp2'>Uncheck All</span>
+                                                </button>
+                                                <button className='butt3'>
+                                                <span className='sp3'>Hide</span>
+                                                </button>
+                                            </div>
+                                        
+                                    </div>
+                                                <TaskSection
+                                                    title="Product List"
+                                                    tasks={list}
+                                                    selectTask={selectTask}></TaskSection>
+                                        </Col>
+                                    </Row>
+
+                                    {/* <Row className="mb-3 mt-4">
+                                        <Col xs={12}>
+                                            <div className="text-center">
+                                                <Link to="#" className="btn btn-white mb-3">
+                                                    <FeatherIcons
+                                                        icon="loader"
+                                                        className="icon-dual icon-xs me-2"></FeatherIcons>
+                                                    Load more
+                                                </Link>
+                                            </div>
+                                        </Col>
+                                    </Row> */}
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                    </Row>
+                </Col>
+
+                <Col xl={12}>
+                    <Row>
+                        <Col>
+                            <Card>
+                                <Card.Body>                                    
+                                    <Row style={{margin:"-20px -32px"}}>
+                                  
+                                        <Col>
+                                        <div className='Homee'>
+                                            <div className='div1'>
+                                            <img src={require("../../assets/images/Product page.svg").default} alt="hfjhf"></img>
+                                            <h3>Product Page</h3>
                                             </div>
                                             <div className='div2'>
                                                 <div className='under'>
@@ -309,7 +371,235 @@ const TaskList = () => {
                                     </div>
                                                 <TaskSection
                                                     title="Product Page"
-                                                    tasks={productTask}
+                                                    tasks={propage}
+                                                    selectTask={selectTask}></TaskSection>
+                                        </Col>
+                                    </Row>
+
+                                    {/* <Row className="mb-3 mt-4">
+                                        <Col xs={12}>
+                                            <div className="text-center">
+                                                <Link to="#" className="btn btn-white mb-3">
+                                                    <FeatherIcons
+                                                        icon="loader"
+                                                        className="icon-dual icon-xs me-2"></FeatherIcons>
+                                                    Load more
+                                                </Link>
+                                            </div>
+                                        </Col>
+                                    </Row> */}
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                    </Row>
+                </Col>
+
+                <Col xl={12}>
+                    <Row>
+                        <Col>
+                            <Card>
+                                <Card.Body>                                    
+                                    <Row style={{margin:"-20px -32px"}}>
+                                  
+                                        <Col>
+                                        <div className='Homee'>
+                                            <div className='div1'>
+                                            <img src={require("../../assets/images/Cart.svg").default} alt="hfjhf"></img>
+                                            <h3>Cart</h3>
+                                            </div>
+                                            <div className='div2'>
+                                                <div className='under'>
+                                                    <span></span>
+                                                </div>
+                                                0/6 Completed
+                                            </div>
+                                            <div>
+                                                <button className='butt1'>
+                                                    <span className='sp1'>Check All</span>
+                                                </button>
+                                                <button className='butt2'>
+                                                <span className='sp2'>Uncheck All</span>
+                                                </button>
+                                                <button className='butt3'>
+                                                <span className='sp3'>Hide</span>
+                                                </button>
+                                            </div>
+                                        
+                                    </div>
+                                                <TaskSection
+                                                    title="Cart"
+                                                    tasks={cartt}
+                                                    selectTask={selectTask}></TaskSection>
+                                        </Col>
+                                    </Row>
+
+                                    {/* <Row className="mb-3 mt-4">
+                                        <Col xs={12}>
+                                            <div className="text-center">
+                                                <Link to="#" className="btn btn-white mb-3">
+                                                    <FeatherIcons
+                                                        icon="loader"
+                                                        className="icon-dual icon-xs me-2"></FeatherIcons>
+                                                    Load more
+                                                </Link>
+                                            </div>
+                                        </Col>
+                                    </Row> */}
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                    </Row>
+                </Col>
+
+                <Col xl={12}>
+                    <Row>
+                        <Col>
+                            <Card>
+                                <Card.Body>                                    
+                                    <Row style={{margin:"-20px -32px"}}>
+                                  
+                                        <Col>
+                                        <div className='Homee'>
+                                            <div className='div1'>
+                                            <img src={require("../../assets/images/Checkout.svg").default} alt="hfjhf"></img>
+                                            <h3>Checkout</h3>
+                                            </div>
+                                            <div className='div2'>
+                                                <div className='under'>
+                                                    <span></span>
+                                                </div>
+                                                0/8 Completed
+                                            </div>
+                                            <div>
+                                                <button className='butt1'>
+                                                    <span className='sp1'>Check All</span>
+                                                </button>
+                                                <button className='butt2'>
+                                                <span className='sp2'>Uncheck All</span>
+                                                </button>
+                                                <button className='butt3'>
+                                                <span className='sp3'>Hide</span>
+                                                </button>
+                                            </div>
+                                        
+                                    </div>
+                                                <TaskSection
+                                                    title="Checkout"
+                                                    tasks={checkout}
+                                                    selectTask={selectTask}></TaskSection>
+                                        </Col>
+                                    </Row>
+
+                                    {/* <Row className="mb-3 mt-4">
+                                        <Col xs={12}>
+                                            <div className="text-center">
+                                                <Link to="#" className="btn btn-white mb-3">
+                                                    <FeatherIcons
+                                                        icon="loader"
+                                                        className="icon-dual icon-xs me-2"></FeatherIcons>
+                                                    Load more
+                                                </Link>
+                                            </div>
+                                        </Col>
+                                    </Row> */}
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                    </Row>
+                </Col>
+
+                <Col xl={12}>
+                    <Row>
+                        <Col>
+                            <Card>
+                                <Card.Body>                                    
+                                    <Row style={{margin:"-20px -32px"}}>
+                                  
+                                        <Col>
+                                        <div className='Homee'>
+                                            <div className='div1'>
+                                            <img src={require("../../assets/images/Account.svg").default} alt="hfjhf"></img>
+                                            <h3>Account</h3>
+                                            </div>
+                                            <div className='div2'>
+                                                <div className='under'>
+                                                    <span></span>
+                                                </div>
+                                                0/4 Completed
+                                            </div>
+                                            <div>
+                                                <button className='butt1'>
+                                                    <span className='sp1'>Check All</span>
+                                                </button>
+                                                <button className='butt2'>
+                                                <span className='sp2'>Uncheck All</span>
+                                                </button>
+                                                <button className='butt3'>
+                                                <span className='sp3'>Hide</span>
+                                                </button>
+                                            </div>
+                                        
+                                    </div>
+                                                <TaskSection
+                                                    title="Account"
+                                                    tasks={account}
+                                                    selectTask={selectTask}></TaskSection>
+                                        </Col>
+                                    </Row>
+
+                                    {/* <Row className="mb-3 mt-4">
+                                        <Col xs={12}>
+                                            <div className="text-center">
+                                                <Link to="#" className="btn btn-white mb-3">
+                                                    <FeatherIcons
+                                                        icon="loader"
+                                                        className="icon-dual icon-xs me-2"></FeatherIcons>
+                                                    Load more
+                                                </Link>
+                                            </div>
+                                        </Col>
+                                    </Row> */}
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                    </Row>
+                </Col>
+
+                <Col xl={12}>
+                    <Row>
+                        <Col>
+                            <Card>
+                                <Card.Body>                                    
+                                    <Row style={{margin:"-20px -32px"}}>
+                                  
+                                        <Col>
+                                        <div className='Homee'>
+                                            <div className='div1'>
+                                            <img src={require("../../assets/images/Mobile.svg").default} alt="hfjhf"></img>
+                                            <h3>Mobile</h3>
+                                            </div>
+                                            <div className='div2'>
+                                                <div className='under'>
+                                                    <span></span>
+                                                </div>
+                                                0/6 Completed
+                                            </div>
+                                            <div>
+                                                <button className='butt1'>
+                                                    <span className='sp1'>Check All</span>
+                                                </button>
+                                                <button className='butt2'>
+                                                <span className='sp2'>Uncheck All</span>
+                                                </button>
+                                                <button className='butt3'>
+                                                <span className='sp3'>Hide</span>
+                                                </button>
+                                            </div>
+                                        
+                                    </div>
+                                                <TaskSection
+                                                    title="Mobile"
+                                                    tasks={mobile}
                                                     selectTask={selectTask}></TaskSection>
                                         </Col>
                                     </Row>
